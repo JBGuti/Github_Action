@@ -59,6 +59,12 @@ jobs:
       - name: Impresion de variables secretas
         run: |
           echo "El usuario es : ${{env.user}}"
-          echo "El password es: ${{env.password}}"    
+          echo "El password es: ${{env.password}}"
+      
+      # variable abierta
+      - name: Variable abierta
+        run: |
+          echo "imprimir variable abierta: ${{vars.Semana_14}}"
+          
         
         
