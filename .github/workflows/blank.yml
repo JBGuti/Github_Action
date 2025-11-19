@@ -23,6 +23,7 @@ jobs:
       
       user: ${{secrets.USER}}
       password: ${{secrets.PASSWORD}}
+      password2: ${{secrets.PASSWORD2}}
       # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -60,11 +61,15 @@ jobs:
         run: |
           echo "El usuario es : ${{env.user}}"
           echo "El password es: ${{env.password}}"
+          echo "El password2 es: ${{env.password2}}"
       
       # variable abierta
       - name: Variable abierta
         run: |
           echo "imprimir variable abierta: ${{vars.Semana_14}}"
+
+      
+
           
         
         
